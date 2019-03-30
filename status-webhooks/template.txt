@@ -1,0 +1,1 @@
+{"content": "<main_message>", "username": "<username>", "embeds": [{"title": "<embed_title>", "description": "<embed_description>"}]}
