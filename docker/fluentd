@@ -1,0 +1,11 @@
+# Build with: docker image build -t fluentdui:1.2.1 .
+# Run with: docker run -d -p 9292:9292 -p 24224:24224 fluentdui:1.2.1
+
+FROM ruby:2.4.0
+
+EXPOSE 24224
+EXPOSE 9292
+
+RUN gem install --no-document --version 1.2.1 fluentd-ui
+
+CMD ["fluentd-ui", "start"]
